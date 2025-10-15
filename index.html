@@ -32,6 +32,15 @@
                 <i class="fa-solid fa-envelope"></i>
                 <span>Gmail</span>
             </a>
+            <button onclick="changeBackgroundColor()">change</button>
+
+            <script>
+                function changeBackgroundColor(){
+                const colors = ["black", "lightblue", "yellowgreen", "orange", "purple", "lightpink"];
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                document.body.style.backgroundColor = randomColor;
+                }
+            </script>
         </div>
     </nav>
 
